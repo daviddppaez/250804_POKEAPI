@@ -10,6 +10,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>PokeAPI</title>
   </head>
   <body>
@@ -57,12 +58,14 @@
 
 
     <!-- Card Ejemplo -->
-     <div id="resultado" class="card" style="width: 18rem;">
-  <img id="pokemon-imagen" src="" alt="Imagen del Pokémon" class="card-img-top">
+     <div class="row pokeInicio">
+     <div id="resultado" class="card col-2" style="width: 18rem;">
+  <img id="pokemon-imagen" src="" alt="" class="card-img-top">
   <div class="card-body">
     <h5 id="pokemon-nombre" class="card-title"></h5>
     <p id="mensaje-error"></p> 
     <a id="guardar-btn" href="#" class="btn btn-primary">Añadir a favoritos</a>
+  </div>
   </div>
 </div>
 

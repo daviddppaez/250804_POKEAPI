@@ -1,0 +1,25 @@
+body {
+    background-image: url('fondo.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.pokeDiseno {
+    max-width: 150px;
+    margin: 5px;
+    text-align: center;
+}
+
+.pokeDiseno img {
+    margin: 0 auto;
+}
+
+.pokeContainer {
+    padding: 40px;
+    justify-content: center;
+}
+
+.pokeInicio {
+    justify-content: center;
+    margin: 20px;
+}

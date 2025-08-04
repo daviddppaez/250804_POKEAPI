@@ -15,8 +15,8 @@ function mostrarPokemonsGuardados() {
     
     const divPokemon = document.createElement('div');  
     divPokemon.classList.add('card');
-    divPokemon.classList.add('col');
-    divPokemon.style.width = "100px"
+    divPokemon.classList.add('col-sm-2');
+    divPokemon.classList.add('pokeDiseno');
     const imgPokemon = document.createElement('img');  
     imgPokemon.src = pokemon.imagen;  
     imgPokemon.alt = pokemon.nombre; 
