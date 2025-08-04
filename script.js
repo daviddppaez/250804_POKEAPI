@@ -56,33 +56,4 @@ function guardarPokemon() {
 }
 
 
-const listaPokemons = document.getElementById('lista-pokemons');  
-  
-function mostrarPokemonsGuardados() {  
-  const pokemonsGuardados = JSON.parse(localStorage.getItem('pokemonsGuardados')) || [];  
-  
-  if (pokemonsGuardados.length === 0) {  
-    listaPokemons.textContent = 'No hay Pokémon guardados.';  
-    return;  
-  }  
-  
-  listaPokemons.innerHTML = ''; // Limpiamos la lista anterior  
-  
-  pokemonsGuardados.forEach(pokemon => {  
-    const divPokemon = document.createElement('div');  
-    divPokemon.classList.add('pokemon'); // Agregamos una clase para estilos (opcional)  
-  
-    const imgPokemon = document.createElement('img');  
-    imgPokemon.src = pokemon.imagen;  
-    imgPokemon.alt = pokemon.nombre;  
-  
-    const nombrePokemon = document.createElement('h3');  
-    nombrePokemon.textContent = pokemon.nombre.toUpperCase();  
-  
-    divPokemon.appendChild(imgPokemon);  
-    divPokemon.appendChild(nombrePokemon);  
-    listaPokemons.appendChild(divPokemon);  
-  });  
-}  
 
-mostrarPokemonsGuardados();
